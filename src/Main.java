@@ -32,4 +32,14 @@ public class Main {
         String textoLimpio = sb.reverse().toString();
         texto = textoLimpio;
     }
+
+    public static void contarVocales(char vocal) {
+        cont = 0;
+        for (int i = 0;i < texto.length() ;i++){
+            char letra = texto.toLowerCase().charAt(i);
+            if (letra == vocal){
+                cont++;
+            }
+        }
+    }
 }
