@@ -22,4 +22,14 @@ public class Main {
 
         sc.close();
     }
+
+    public static void limpiarTexto() {
+        StringBuilder sb = new StringBuilder(texto);
+        sb.reverse();
+        for (int i = 0; i < 3; i++){
+            sb.deleteCharAt(0);
+        }
+        String textoLimpio = sb.reverse().toString();
+        texto = textoLimpio;
+    }
 }
